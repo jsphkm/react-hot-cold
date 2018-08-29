@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: fVICcwDRt/BNbt0i5Po+Tz21wb+Ld6uRiy3kFQEW9BfqnHFUl12kWxiC0RwwkjuK1lQBY0Y+Orh+nFjrwzhdFHGCB/3tJvK/9i5jCreS56zaIRW+K+4jHlx4GpjGwqoa6k03KPYwV6bQY7VKwBqeeGUrPga2+iAX+syPF++V6WS3kQZPbP8vBPnBUp62JVb9TYuYnSW6YttJQLSNMNgsKDXWCgMfNyYfRimEgC2p4hAVBRnE6gRaebl7IdxzKICs6C0fgZk70sRfH03T1rDdpRX/H67BepdK90HbXsmwiSoeUQ/OusHTvLTSQb2xQBsXhQwkpfJOihHJmzZwsuURu0I/H0UVqkpyeRF/U/MsfZfJot3El3LK3kQtB4eV1cxU1gHGXeCPT+VNY7SrtUZaO/5jkJMlW4+aVM6QfF41GcajWgTkcWznx7rXnmv4NEduA3abUH3OIujM/loZxvWKbSg3eLx4ATyiVc/UKkRBTTc9POWTTbHe8adIYhr9JvgXV6SFbRnpehf7T1vBkyN6rADHpku5jz3tq7+78dJkEQGO9OHNf/AtXvSP1KaMm8CkIfqxHKeZTq7qKJCLXvmjZSnacA5a3pa/vQvNF+2dco51WCLDSGkJXFleB8wNdghNqQ0Gu17rlS6z0IygUm2PExl3KvRMVrkWnpRrPobUyUg=
+  app: shrouded-waters-86316
+  on:
+    repo: jsphkm/react-hot-cold
