@@ -40,9 +40,9 @@ export default class Game extends React.Component {
     } else if (difference >= 30) {
       feedback = 'You\'re Cold...';
     } else if (difference >= 10) {
-      feedback = 'You\'re Warm.';
+      feedback = 'You\'re Warm...';
     } else if (difference >= 1) {
-      feedback = 'You\'re Hot!';
+      feedback = 'You\'re Hot...';
     } else {
       feedback = 'You got it!';
     }
